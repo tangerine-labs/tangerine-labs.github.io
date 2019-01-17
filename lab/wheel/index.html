@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Wheel animation</title>
+    <link rel="stylesheet" href="wheel.css">
+    <style media="screen">
+    @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.dospin {
+  -webkit-animation:spin 7s linear infinite;
+  -moz-animation:spin 7s linear infinite;
+  animation:spin 7s linear infinite;
+}
+.dospin2 {
+  -webkit-animation:spin 11s linear infinite;
+  -moz-animation:spin 11s linear infinite;
+  animation:spin 11s linear infinite;
+}
+.dospin3 {
+  -webkit-animation:spin 17s linear infinite;
+  -moz-animation:spin 17s linear infinite;
+  animation:spin 17s linear infinite;
+}
+
+.wheels {
+  transform: translate3d(0,0,0);
+}
+.wheel {
+  left: 0;
+}
+
+    </style>
+  </head>
+  <body>
+    <div id="wheel_bg" class="ely"></div>
+<div class="cs-panel" id="battle_wheel">
+
+  <div id="battleWheelFight" class="ely">
+    <div class="gameArea contraption" style="margin: auto">
+      <div class="wheels">
+        <div class="wheel dospin3" style="width: 500px; height: 500px;"></div>
+        <div class="wheel dospin2" style="width: 375px; height: 375px; margin: 62px;"></div>
+        <div class="wheel dospin" style="width: 250px; height: 250px; margin: 125px;"></div>
+        <div class="wheelOverlay" style="width: 500px; height: 500px;"></div>
+      </div>
+    </div>
+    </div>
+</div>
+  </body>
+</html>
