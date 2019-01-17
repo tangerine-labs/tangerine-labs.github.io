@@ -8,12 +8,19 @@
         margin: 0; font-family: Helvetica, Arial, Sans-Serif; text-align: center; background: #ccc; display: flex; flex-direction: column;
       }
     </style>
+    <script>
+    function twinkle() {
+      var audio = document.querySelector('audio');
+      audio.volume=0.2;
+      audio.play();
+    }
+    </script>
   </head>
   <body>
     <div style="background: #fff; padding: 2em;">
     <img
       src="t.svg" style="max-width: 640px; width: 50%;"
-      onclick="document.querySelector('audio').play();"
+      onclick="twinkle()"
     />
     </div>
 
